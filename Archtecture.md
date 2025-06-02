@@ -1,6 +1,22 @@
-Absolutely! Here are the key equations capturing your hybrid system with error control, step by step.
+# Archtecture
 
----
+
+Raw Data → Tokenization → Quantum Encoding → Qubit Graph
+                                  ↓
+                           Compression + Removal
+                                  ↓
+                   Classical Latent Diffusion Decoder
+                                  ↓
+                         Quantum Decoder Layer
+                                  ↓
+                        Error Circuit Estimation
+                                  ↓
+                        RNN Controls Error Removal
+                                  ↓
+                          Loop for Refinement
+
+
+
 
 # 1. **Quantum Encoding**
 
@@ -121,7 +137,3 @@ $$
 $$
 |\psi_{\text{encoded}}\rangle \xrightarrow{U_{\phi}(z)} |\psi_{\text{decoded}}\rangle \xrightarrow{\text{compare}} F, \mathcal{E}
 $$
-
----
-
-If you want, I can also write code snippets or help with specific parts like RNN training or quantum decoder circuit parametrization next!
